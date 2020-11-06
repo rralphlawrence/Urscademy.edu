@@ -1,0 +1,114 @@
+.home {
+    background:radial-gradient(#ffffff, #ffffff);
+}
+
+.nav-container{
+    background:rgb(29, 30, 39);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav{
+    width: 80%;
+    margin: auto;
+    min-height: 5vh;
+    padding: 3rem  0rem;
+    display: flex ;
+    justify-content: space-between;
+
+#urs{
+    width: 5rem;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+    left: 6rem;
+    justify-content: space-between;
+}
+ul{
+    display:flex;
+    justify-content: space-between;
+    flex: 2;
+    list-style: none;
+    }
+    #logo{
+        flex: 2;
+        position: relative;
+        &::after{
+            content:"";
+            position:absolute;
+         transform: translate(-10%,-20%);
+            mix-blend-mode: screen;
+            align-self: flex-end;
+        }
+    }
+    .order{
+        background:#10f181;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        border:0;
+        color: white;
+
+    }
+    .order:hover{
+        color: rgb(137, 138, 146);
+
+    }
+    .about:hover{
+        color: rgb(137, 138, 146);
+    }
+    .Contact:hover{
+        color: gray;
+    }
+}
+.showcase {
+    display:grid;
+    min-height: 90vh;
+    grid-template-columns: 10% repeat(3,minmax(5rem, 1fr)) 10%;
+    grid-template-rows: 1fr  2fr  1fr ;
+
+h2{
+    grid-column: 2/3;
+    align-self: flex-end;
+ 
+ 
+}
+img{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    height: 70%;
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+    }
+    .info{
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    #online{
+       width: 500px;
+       height: 400px;
+       align-self:left;
+       padding-bottom: none;
+    }
+    
+    
+    h3{
+        padding-bottom: -1rem;
+    
+       
+       
+    }
+    #btn{
+        background:rgb(3, 231, 136);
+        color: white;
+        padding:0rem 5rem 0rem 5rem;
+        margin-top: 2rem;
+        height:30px ;
+       border:0;
+
+    }
+    #btn:hover{
+        background:rgb(10, 98, 230);
+        
+    }
+}

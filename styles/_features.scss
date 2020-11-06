@@ -1,0 +1,51 @@
+.feature-containers{
+    background: #ffffff;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    .Wave{
+        position:absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+       
+    }
+
+}  
+.features {
+    min-height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    .cards{
+        display:flex;
+        justify-content: space-between;
+        color: rgb(0, 0, 0);
+
+        .card{
+        background:white;
+        margin: 0rem 5rem;
+        display: flex ;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 2rem;
+        overflow: hidden;
+            .h4{
+                margin: 2rem 0rem 1rem 0;
+            }
+                .p{
+                    padding: 3rem;
+                }
+                    .img{
+                        object-fit: cover;
+                        
+                    }
+                
+            
+        }
+    } 
+}
